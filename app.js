@@ -11,10 +11,10 @@ app.use(bodyParser.urlencoded({extended:true}));
 
 
 app.get("/", function(req, res){
-    res.sendFile(__dirname + "/weather/index.html");
+    res.sendFile(__dirname + "/index.html");
 });
 
-app.post("/weather", function(req, res){
+app.post("/", function(req, res){
     var cityName = req.body.city;
     var userUnit = req.body.unit;
 

@@ -43,6 +43,5 @@ app.post("/", function(req, res){
     // console.log(cityName);
     // console.log(userUnit);
 });
-// app.listen("Ragandev.github.io/weather");
-app.listen(process.evn.PORT);
+app.listen(process.env.PORT || 3000);
 console.log("Server Started");
